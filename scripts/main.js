@@ -4,10 +4,11 @@ require([
     'modules/firstname', 
     'modules/lastname',
     'modules/booktestdrive',
-    'modules/savebutton'
-    ], function(ignore, pre, firstname, lastname, booktestdrive, savebutton) {
+    'modules/savebutton',
+    'modules/custominput'
+    ], function(ignore, pre, firstname, lastname, booktestdrive, savebutton, custominput) {
 
-    var extenders = [pre, firstname, lastname, booktestdrive, savebutton];
+    var extenders = [pre, firstname, lastname, booktestdrive, savebutton, custominput];
 
     function Editor(input, preview) {
 
