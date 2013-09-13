@@ -1,0 +1,78 @@
+
+main-font()
+    font: 150%/120% Aria, Helvetica, sans-serif;
+
+html, body
+    margin 0
+    width 100%
+    min-height 100%
+    display flex
+    flex 1
+
+#full
+    position fixed
+    padding 13px 15px 10px
+    background-color #ccc
+    main-font()
+    font-weight bold
+    right 20px
+    top 20px
+    opacity .5
+    font-size 100%
+    cursor pointer
+    &:hover
+        background-color lightblue
+
+#main
+    display flex
+    flex 1
+    font-size 1
+    font-family arial
+
+#edit
+    flex 50%
+    border 0
+    outline none
+    resize none
+    box-sizing border-box
+    font-size 1.7em
+    font-family arial
+    padding 2em
+    main-font()
+
+#preview
+    box-sizing border-box
+    flex 50%
+    font-size 1.7em
+    padding 2em
+    background-color #fafafa
+    border-left 5px #eee solid
+    &.full
+        flex 100%
+
+.field-row
+    display flex
+
+    .field
+        flex 1
+        display flex
+        padding-right 1em
+        &:last-child
+            padding-right 0
+
+.field
+    flex 1
+    display flex
+    label
+        min-width 100px
+    input 
+        min-width 50px
+        flex 1
+    select
+        margin-left .3em
+        margin-top 5px
+        font-size 1.7em
+        flex 1
+
+.save-bar
+    float right
